@@ -12,7 +12,7 @@ export const Chat = () => {
       <div className="chat">
         {
           currentChat.chat.length
-          ? currentChat.chat.map(({ content, sender }, index) => <ChatBox key={index} message={content} isMine={sender === 0} />)
+          ? currentChat.chat.map((message, index) => <ChatBox key={index} message={message} />)
           : <p>No messages yet ...</p>
         }
       </div>
