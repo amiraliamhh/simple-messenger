@@ -1,0 +1,13 @@
+.friend {
+  height: 64px;
+  padding: 8px 16px;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.friend.selected {
+  color: white;
+  background-color: var(--color-primary);
+}
